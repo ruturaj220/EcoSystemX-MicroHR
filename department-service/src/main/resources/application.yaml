@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: department-service
+  config:
+    import: "optional:configserver:http://localhost:2128"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/departmentdb
+    username: root
+    password: 2128
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+
+
